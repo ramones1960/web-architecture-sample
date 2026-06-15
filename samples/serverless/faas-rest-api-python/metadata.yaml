@@ -1,0 +1,13 @@
+name: faas-rest-api-python
+category: serverless
+status: active
+languages:
+  - python
+summary: 純粋なハンドラ関数とローカルインボーカ（API Gateway 模倣）で示す FaaS 版 REST API サンプル
+tags:
+  - serverless
+  - faas
+  - rest-api
+created: 2026-06-15
+maintainers:
+  - "@ramones1960"

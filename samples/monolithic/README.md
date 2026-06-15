@@ -11,8 +11,8 @@
 
 ## 収録サンプル
 
-| サンプル | 言語 | ステータス |
-| --- | --- | --- |
-| _（まだありません）_ | | |
+| サンプル | 言語 | 役割 | ステータス |
+| --- | --- | --- | --- |
+| [`layered-architecture-go`](layered-architecture-go/) | Go | 業務アプリのバックエンド（タスク管理 API） | active |
 
 > 追加方法は [追加ガイド](../../docs/guides/adding-a-new-architecture.md) を参照。

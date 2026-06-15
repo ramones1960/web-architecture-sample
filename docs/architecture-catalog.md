@@ -16,7 +16,7 @@
 
 | アーキテクチャ | 概要 | 状態 |
 | --- | --- | --- |
-| layered-architecture | プレゼン / アプリ / ドメイン / インフラの層分割 | 📝 |
+| layered-architecture | プレゼン / アプリ / ドメイン / インフラの層分割 | ✅ [`layered-architecture-go`](../samples/monolithic/layered-architecture-go/) |
 | modular-monolith | モジュール境界を持つ単一デプロイ | 📝 |
 | clean-architecture | 依存方向を内向きに統一（ヘキサゴナル / オニオン） | 📝 |
 
@@ -25,7 +25,7 @@
 
 | アーキテクチャ | 概要 | 状態 |
 | --- | --- | --- |
-| service-per-domain | ドメイン単位のサービス分割 + API Gateway | 📝 |
+| service-per-domain | ドメイン単位のサービス分割 + API Gateway | ✅ [`service-per-domain-ts`](../samples/microservices/service-per-domain-ts/) |
 | saga-orchestration | 分散トランザクションを Saga で調整 | 📝 |
 
 ### `event-driven` — イベント駆動系
@@ -41,7 +41,7 @@ FaaS / BaaS / エッジ実行を中心とした、運用負荷とコストを抑
 
 | アーキテクチャ | 概要 | 状態 |
 | --- | --- | --- |
-| faas-rest-api | 関数ベースの REST API | 📝 |
+| faas-rest-api | 関数ベースの REST API | ✅ [`faas-rest-api-python`](../samples/serverless/faas-rest-api-python/) |
 | edge-rendering | エッジでのレンダリング/配信 | 📝 |
 
 ### `frontend` — フロントエンド系

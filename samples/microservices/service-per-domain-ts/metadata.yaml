@@ -1,0 +1,16 @@
+# サンプルのメタデータ。索引・検証・将来の自動化に使用します。
+# 必須: name, category, status, languages, summary
+
+name: service-per-domain-ts
+category: microservices
+status: active
+languages:
+  - typescript
+summary: API ゲートウェイとドメイン別マイクロサービス（catalog / order）で構成する、複数チームが独立して開発・デプロイする業務システムのバックエンド例。
+tags:
+  - microservices
+  - api-gateway
+  - service-per-domain
+created: 2026-06-15
+maintainers:
+  - "@ramones1960"
