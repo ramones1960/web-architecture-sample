@@ -17,9 +17,11 @@
 
 > サンプルを追加したら、この表に 1 行追加してください。
 
-| サンプル | カテゴリ | 言語 | ステータス |
-| --- | --- | --- | --- |
-| _（まだありません — 最初のサンプルを追加しましょう）_ | | | |
+| サンプル | カテゴリ | 言語 | 役割 | ステータス |
+| --- | --- | --- | --- | --- |
+| [`layered-architecture-go`](monolithic/layered-architecture-go/) | monolithic | Go | 業務アプリのバックエンド | active |
+| [`service-per-domain-ts`](microservices/service-per-domain-ts/) | microservices | TypeScript | 大規模業務システム（複数チーム） | active |
+| [`faas-rest-api-python`](serverless/faas-rest-api-python/) | serverless | Python | API サーバ（FaaS） | active |
 
 ## 新しいサンプルを追加するには
 

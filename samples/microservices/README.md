@@ -10,8 +10,8 @@
 
 ## 収録サンプル
 
-| サンプル | 言語 | ステータス |
-| --- | --- | --- |
-| _（まだありません）_ | | |
+| サンプル | 言語 | 役割 | ステータス |
+| --- | --- | --- | --- |
+| [`service-per-domain-ts`](service-per-domain-ts/) | TypeScript (Node) | 大規模業務システムのバックエンド（API Gateway + ドメイン別サービス） | active |
 
 > 追加方法は [追加ガイド](../../docs/guides/adding-a-new-architecture.md) を参照。

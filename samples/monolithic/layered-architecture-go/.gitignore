@@ -1,0 +1,12 @@
+# Go
+bin/
+*.exe
+*.test
+*.out
+
+# 環境変数 / ローカル設定
+.env
+.env.local
+
+# OS / エディタ
+.DS_Store

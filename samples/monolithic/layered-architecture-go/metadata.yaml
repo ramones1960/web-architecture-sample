@@ -1,0 +1,13 @@
+name: layered-architecture-go
+category: monolithic
+status: active
+languages:
+  - go
+summary: レイヤードアーキテクチャで実装した社内タスク管理バックエンド HTTP API（Go 標準ライブラリのみ）。
+tags:
+  - layered-architecture
+  - ddd
+  - rest-api
+created: 2026-06-15
+maintainers:
+  - "@ramones1960"
