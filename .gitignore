@@ -1,0 +1,14 @@
+# ルートはツールチェーンを持たない（ADR-0002）。
+# 言語固有の無視設定は各サンプルの .gitignore に置くこと。
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ログ / 一時ファイル
+*.log
+tmp/
+.cache/

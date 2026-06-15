@@ -1,0 +1,28 @@
+# サンプルのメタデータ。索引・検証・将来の自動化に使用します。
+# 必須: name, category, status, languages, summary
+
+# サンプル名（ディレクトリ名と一致させる。kebab-case）
+name: <architecture-name>
+
+# カテゴリ（docs/architecture-catalog.md で定義済みのもの）
+# monolithic | microservices | event-driven | serverless | frontend
+category: <category>
+
+# ライフサイクル: draft | active | maintenance | deprecated
+status: draft
+
+# 使用言語（複数可）
+languages:
+  - <language>   # 例: typescript, go, python, java
+
+# 一行サマリ
+summary: <このサンプルの概要を一行で>
+
+# 検索・分類用タグ（任意）
+tags:
+  - <tag>
+
+# 作成日 / メンテナ（任意）
+created: <YYYY-MM-DD>
+maintainers:
+  - "@<github-handle>"
