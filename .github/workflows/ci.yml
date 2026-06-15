@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# 言語非依存の構造検証 + 変更サンプルの検出を行う。
+# 各サンプルの実ビルド/テストはサンプル側で定義し、必要に応じて
+# このワークフローからディスパッチする方針（ADR-0002 参照）。
+jobs:
+  validate-structure:
+    name: サンプル構造の検証
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: validate-samples
+        run: |
+          chmod +x tools/validate-samples.sh
+          ./tools/validate-samples.sh
+
+  detect-changes:
+    name: 変更サンプルの検出
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 変更されたサンプルを列挙
+        run: |
+          base="${{ github.event.pull_request.base.sha }}"
+          base="${base:-HEAD~1}"
+          echo "変更されたサンプル:"
+          git diff --name-only "$base" HEAD -- 'samples/**' \
+            | sed -nE 's#^(samples/[^/]+/[^/]+)/.*#\1#p' \
+            | sort -u || true
+          # 各サンプルが Makefile に `ci` ターゲットを持つ場合、ここで
+          # `make -C <sample> ci` を呼び出す形に拡張できる。

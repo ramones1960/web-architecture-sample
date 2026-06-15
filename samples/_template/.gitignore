@@ -1,0 +1,26 @@
+# 各サンプルはここに言語固有の無視設定を追加します。
+# 例（必要なものだけ残す）:
+
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+.venv/
+*.pyc
+
+# Go
+bin/
+
+# Java
+target/
+build/
+
+# 環境変数 / ローカル設定
+.env
+.env.local
+
+# OS / エディタ
+.DS_Store
